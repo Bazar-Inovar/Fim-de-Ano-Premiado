@@ -89,3 +89,20 @@ async function buscarNumeros() {
         resultadoDiv.innerHTML = "<p style='color:red'>Ocorreu um erro ao buscar seus números.</p>";
     }
 }
+
+function criarNeve() {
+    const floco = document.createElement("div");
+    floco.classList.add("floco");
+    floco.innerHTML = "❄";
+
+    floco.style.left = Math.random() * window.innerWidth + "px";
+    floco.style.fontSize = (10 + Math.random() * 20) + "px";
+    floco.style.opacity = Math.random();
+    floco.style.animationDuration = (4 + Math.random() * 6) + "s";
+
+    document.getElementById("neve").appendChild(floco);
+
+    setTimeout(() => floco.remove(), 10000);
+}
+
+setInterval(criarNeve, 150);
