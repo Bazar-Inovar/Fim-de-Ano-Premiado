@@ -5,6 +5,18 @@
     font-family: "Quicksand", sans-serif
 }
 
+#neve .floco {
+  position: fixed;
+  color: white;
+  font-size: 10px;
+  animation: cair linear infinite;
+  pointer-events: none;
+}
+
+@keyframes cair {
+  to { transform: translateY(100vh); }
+}
+
 /*DIVs FLEX*/
 header, .menu, .banner, .imagens, .avisos, .estruturas , .estrutura, .form, #resultado{
     display: flex;
@@ -45,9 +57,10 @@ header{
 }
 
 .banner{
-    height: 500px;
+    height: 100%;
     width: 100%;
     background-color: #a60002;
+    padding: 20px;
 }
 .imagens{
     width: 500px;
@@ -62,12 +75,12 @@ header{
 }
 .avisos{
     flex-direction: column;
-    width: 1000px;
+    width: 900px;
     color:#e5c78a;
     z-index: +1;
-    padding: 20px;
     border-radius: 10px;
     gap: 25px;
+    justify-content: start;
     & h1{
         color:#e5c78a;
         font-family: "Montserrat", sans-serif;
@@ -82,7 +95,12 @@ header{
         font-weight: 400;
         margin-bottom: 10px;
     }
+    p{
+        font-size: 11px;
+        color: #e5c78a;
+    }
 }
+
 .estruturas{
     width: 100%;
     padding: 20px 50px;
