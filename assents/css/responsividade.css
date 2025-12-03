@@ -1,0 +1,153 @@
+@media screen and (min-width: 350px) and (max-width: 599px){
+    .menu{
+        height: 140px;
+
+        & h1, h2{
+            width: 130px;
+            font-size: 20px;
+        }
+        & img{
+            height: 120px;
+        }
+    }
+    
+    .banner{
+        height: 100%;
+        padding: 10px 0px 30px 0px;
+        flex-direction: column-reverse;
+    }
+    .imagens{
+        width: 100%;
+        gap: 30px;
+        & img{
+            height: 160px;
+            width: 160px;
+        }
+    }
+    .avisos{
+        width: 100%;
+        gap: 20px;
+        & h1{
+            font-size: 25px;
+            text-align: center;
+            border: none;
+        }
+        & h2, h3{
+            font-size: 18px;
+            text-align: center;
+        }
+        & p{
+            margin-bottom: 7px;
+            text-align: center;
+        }
+    }
+
+    .estruturas{
+        flex-direction: column-reverse;
+        padding: 20px 3px;
+    }
+    .estrutura{
+        height: 100%;
+        width: 95%;
+        & h1{
+            font-size: 16px;
+            width: 100%;
+        }
+        .form{
+            gap: 10px;
+        }
+        & input{
+            height: 30px;
+            font-size: 18px;
+            width: 150px;
+        }
+    }
+    footer{
+        height: 100%;
+        padding: 10px;
+        flex-direction: column;
+        gap: 30px;
+
+        & .base{
+            gap: 3px;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 999px){
+    .menu{
+        height: 140px;
+
+        & h1, h2{
+            width: 200px;
+        }
+        & img{
+            height: 120px;
+        }
+    }
+    
+    .banner{
+        height: 100%;
+        padding: 10px 0px 30px 0px;
+        flex-direction: column-reverse;
+    }
+    .imagens{
+        width: 100%;
+        gap: 30px;
+        & img{
+            height: 150px;
+            width: 150px;
+        }
+    }
+    .avisos{
+        width: 99%;
+        gap: 20px;
+        & h1{
+            font-size: 25px;
+            text-align: center;
+            border: none;
+        }
+        & h2, h3{
+            font-size: 20px;
+            text-align: center;
+        }
+        & p{
+            margin-bottom: 7px;
+            text-align: center;
+        }
+    }
+    .estruturas{
+        flex-direction: column-reverse;
+    }
+    .estrutura{
+        height: 100%;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1500px){
+    /*BANNER*/
+    .imagens{
+        width: 400px;
+        & img{
+            height: 150px;
+            width: 150px;
+        }
+    }
+    .avisos{
+        width: 700px;
+        gap: 25px;
+        & h1{
+            font-size: 30px;
+        }
+        & h2, h3{
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+
+    /*REGULAMENTO E VERIFICADOR*/
+    .estrutura{
+        width: 50%;
+    }
+}
