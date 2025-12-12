@@ -18,6 +18,8 @@ const db = getDatabase(app);
 let botao = document.querySelector('#botao-buscar')
 botao.addEventListener('click', buscarNumeros)
 
+let verificador = document.querySelector('#verificador')
+
 async function buscarNumeros() {
     const telefone = document.getElementById("telefone").value.trim();
     const resultadoDiv = document.getElementById("resultado");
@@ -83,6 +85,8 @@ async function buscarNumeros() {
         tabela += `</table>`;
 
         resultadoDiv.innerHTML = tabela;
+
+        verificador.style.height = '100%'
 
     } catch (error) {
         console.error(error);
